@@ -30,11 +30,9 @@
               <p style="text-align:center">
                 <name>Feifan Lv</name>
               </p>
-              <p>I am currently a third-year master student at <a href="https://ev.buaa.edu.cn/">Beihang University</a>,  where I work on computational photography under the supervision of <a href="http://phi-ai.org/">Prof. <b>Feng Lu</b></a>.
-              </p>
-              <p>
-                I was a research intern at <a href="https://www.msra.cn/">MSRA</a>, supervised by <a href="https://www.microsoft.com/en-us/research/people/xunguo/">Dr. <b>Xun Guo</b></a>. I did my bachelors at <a href="http://english.njau.edu.cn/">Nanjing Agricultural University</a>.
-              </p>
+              <p>I am an algorithm engineer at <a href="https://www.huawei.com/">Huawei</a>, where I work on computer vision and autonomous driving.</p>
+              <p>Before that, I received my Master's degree from <a href="https://ev.buaa.edu.cn/">Beihang University</a>, under the supervision of <a href="http://phi-ai.org/">Prof. Feng Lu</a>. I was a research intern in <a href="https://www.msra.cn/">Microsoft Research Asia</a> during Summer and Autumn, 2019.</p>
+              
               <p style="text-align:center">
                 <a href="mailto:lvfeifan@buaa.edu.cn">Email</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=arEREYsAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
@@ -42,16 +40,15 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/feifan.jpg" class="hoverZoomLink">
+              <a href="images/feifan.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/feifan_circle.jpg" class="hoverZoomLink">
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-              I'm interested in computational photography, computer vision and image processing. To be specific, I'm particularly interested in low-level vision tasks including denoising, enhancement and super-resolution.
+              <heading>Research</heading>      
+              <p>I'm interested in image processing and computer vision. To be specific, I'm particularly interested in low-level vision tasks including denoising, enhancement and super-resolution.
               </p>
             </td>
           </tr>
@@ -77,53 +74,55 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/1908.00682">
-                <papertitle>Attention-guided Low-light Image Enhancement</papertitle>
+                <papertitle>Attention Guided Low-light Image Enhancement with a Large Scale Low-light Simulation Dataset</papertitle>
               </a>
               <br>
               <strong>Feifan Lv</strong>,
               <a href="http://yu-li.github.io/">Yu Li</a>,
               <a href="http://phi-ai.org/">Feng Lu</a>
               <br>
-              <em>Under Review</em>
+              <em>IJCV, 2021</em>
               <br>
-              <a href="http://phi-ai.org/project/AgLLNet/default.htm">project page</a>
+              <a href="http://phi-ai.buaa.edu.cn/project/AgLLNet/index.htm">project page</a>  /
+              <a href="https://github.com/yu-li/AGLLNet">code</a>
               <br>
               <p></p>
-              <p> By introducing two attention maps to guide the exposure enhancement and denoising tasks respectively, our enhancement network can work an input adaptive way.</p>
+              <p> By introducing two attention maps to guide the exposure enhancement and denoising tasks respectively, our enhancement network can work in an input adaptive way.</p>
             </td>
           </tr>
           
-          <tr onmouseout="font_stop()" onmouseover="font_start()">
+          <tr onmouseout="unexposed_stop()" onmouseover="unexposed_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='font_image'><img src='images/seg_after.jpg'></div>
-                <img src='images/seg_before.jpg'>
+                <div class="two" id='unexposed_image'><img src='images/nuiie_after.jpg'></div>
+                <img src='images/nuiie_before.jpg'>
               </div>
               <script type="text/javascript">
-                function font_start() {
-                  document.getElementById('font_image').style.opacity = "1";
+                function unexposed_start() {
+                  document.getElementById('unexposed_image').style.opacity = "1";
                 }
 
-                function font_stop() {
-                  document.getElementById('font_image').style.opacity = "0";
+                function unexposed_stop() {
+                  document.getElementById('unexposed_image').style.opacity = "0";
                 }
-                font_stop()
+                unexposed_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/1911.07217">
-                <papertitle><strong>Real-Time Semantic Segmentation via Multiply Spatial Fusion Network</strong></papertitle>
+              <a href="https://arxiv.org/abs/2006.00439">
+                <papertitle>Fast Enhancement for Non-Uniform Illumination Images using Light-weight CNNs</papertitle>
               </a>
               <br>
-              Haiyang Si, Zhiqiang Zhang,
               <strong>Feifan Lv</strong>,
-              <a href="http://www.skicyyu.org/">Gang Yu</a>,
+              Bo Liu,
               <a href="http://phi-ai.org/">Feng Lu</a>
+              
               <br>
-              <em>Under Review</em>
+              <em>ACM MM</em>, 2020 
               <br>
+             <br>
               <p></p>
-              <p>To achieve fast and accurate perception, we propose an efficient CNN called Multiply Spatial Fusion Network (MSFNet) using Class Boundary Supervision.</p>
+              <p>A light-weight CNN is proposed for non-uniform illumination image enhancement, which can handle color, exposure, contrast, noise and artifacts, etc., simultaneously and effectively.</p>
             </td>
           </tr>
           
@@ -145,7 +144,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="">
+              <a href="https://arxiv.org/abs/2005.04580">
                 <papertitle>An Integrated Enhancement Solution for 24-hour Colorful Imaging</papertitle>
               </a>
               <br>
@@ -156,7 +155,7 @@
               <br>
               <em>AAAI</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
               <br>
-              
+             <br>
               <p></p>
               <p>To produces clear color images in 24 hours, we separate the VIS and NIR information from mixed signals, and enhance the VIS signal adaptively with the NIR signal as assistance.</p>
             </td>
@@ -226,9 +225,44 @@
               <br>
               <em>AAAI</em>, 2019
               <br>
-              
+              <br>
               <p></p>
               <p>Inspired by Koch's Postulates, we define a pathological descriptor and propose a GAN based method to visualize the symptom and feature encoded in this descriptor.</p>
+            </td>
+          </tr>
+          
+          <tr onmouseout="font_stop()" onmouseover="font_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='font_image'><img src='images/seg_after.jpg'></div>
+                <img src='images/seg_before.jpg'>
+              </div>
+              <script type="text/javascript">
+                function font_start() {
+                  document.getElementById('font_image').style.opacity = "1";
+                }
+
+                function font_stop() {
+                  document.getElementById('font_image').style.opacity = "0";
+                }
+                font_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/1911.07217">
+                <papertitle><strong>Real-Time Semantic Segmentation via Multiply Spatial Fusion Network</strong></papertitle>
+              </a>
+              <br>
+              Haiyang Si, Zhiqiang Zhang,
+              <strong>Feifan Lv</strong>,
+              <a href="http://www.skicyyu.org/">Gang Yu</a>,
+              <a href="http://phi-ai.org/">Feng Lu</a>
+              <br>
+              <em>arXiv</em>, 2019
+              <br>
+              <br>
+              <p></p>
+              <p>To achieve fast and accurate perception, we propose an efficient CNN called Multiply Spatial Fusion Network (MSFNet) using Class Boundary Supervision.</p>
             </td>
           </tr>
 
@@ -259,7 +293,7 @@
               <br>
               <em>BMVC</em>, 2018
               <br>              
-              <a href="http://phi-ai.org/project/MBLLEN/default.htm">project page</a> /
+              <a href="http://phi-ai.buaa.edu.cn/project/MBLLEN/index.htm">project page</a> /
               <a href="https://github.com/Lvfeifan/MBLLEN">code</a>
               <p></p>
               <p>Enhancing low-light image/video using the proposed multi-branch network by extracting and fusing rich features up to different levels.</p>
@@ -273,7 +307,7 @@
               <p style="text-align:right;font-size:small;">
                 
                 <br>
-                Last update: Dec. 2019 &nbsp|&nbsp Template stolen from <a href="http://jonbarron.info"><font size="2">Jon Barron</font></a>
+                Last update: Dec. 2021 &nbsp|&nbsp Template stolen from <a href="http://jonbarron.info"><font size="2">Jon Barron</font></a>
               </p>
             </td>
           </tr>
